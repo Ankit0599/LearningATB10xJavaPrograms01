@@ -6,5 +6,8 @@ public class LAB049_Interview_Q4 {
         char c = 'A'; // A -> 65
 
         System.out.println(s + c);
+        System.out.println(c);
+
+        // when you do the +concat then only ASCII values are used
     }
 }
