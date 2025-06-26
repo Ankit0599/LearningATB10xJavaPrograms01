@@ -8,6 +8,9 @@ public class LAB170_Strings_Functions {
         String name3 = "a, b, c";
         int number = 123;
         String fruits = "Apple,Banana,Grapes";
+        String Sentence = "Java is Powerful";
+        String S1 = "Grapes";
+        String S2 = "Banana";
 
         //1. length() - Returns the number of characters in the string
         System.out.println(name.length());
@@ -29,7 +32,7 @@ public class LAB170_Strings_Functions {
         System.out.println(name.equalsIgnoreCase("Subhashree"));
 
         //7. compareTo(String str) - Lexicographically compares two strings
-        int results = name1.compareTo(name2);
+        int results = S1.compareTo(S2);
         System.out.println("Result of CompareTO : " + results);
 
         //8. toLowerCase() - Converts string to all lowercase letters
@@ -42,7 +45,8 @@ public class LAB170_Strings_Functions {
         System.out.println(name.trim());
 
         //11. contains(CharSequence s) - Checks if string contains a sequence
-        System.out.println(name.contains("11")); //------
+        boolean hasWord = Sentence.contains("Power");
+        System.out.println("Contains Power ?" + hasWord);
 
         //12. startsWith(String prefix) - Checks if string starts with a prefix
         System.out.println(name.startsWith("Su"));
@@ -69,7 +73,7 @@ public class LAB170_Strings_Functions {
         String []parts = fruits.split(",");
 
         for (String fruit : parts) {
-            System.out.println("fruit");
+            System.out.println(fruit);
         }
 
         //20. toCharArray() - Converts string to character array
